@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <CPostForm/>
-      <PostList />
+      <div className="flex-container">
+        <CPostForm />
+        <PostList />
+      </div>
     </div>
   );
 }
