@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CPostForm.css";
 
-const CPostForm = ({}) => {
+const CPostForm = ({onNewPost}) => {
   const [name, setName] = useState("");
   const [post, setPost] = useState("");
 
@@ -10,9 +10,9 @@ const CPostForm = ({}) => {
     e.preventDefault();
     const formData ={
        name,
-       post
+       postMessage:post,
     }
-    console.log(formData);
+   onNewPost(formData);
   };
   return (
     <form onSubmit={handleSubmit} className="flex-item">

@@ -1,12 +1,10 @@
-const PostList = ({}) => {
-  return (
-    <div className="flex-item2">
-      <h3>Feed</h3>
-      <div>Blocks of Post</div>
-      <div>Blocks of Post</div>
-      <div>Blocks of Post</div>
-    </div>
-  );
+import Post from "../Post/Post";
+
+const PostList = ({ posts = [] }) => {
+  const postItems = posts.map((post,i) => (
+    <Post key={i} postObj={post} />
+  ));
+  return <div className="flex-item2">{postItems}</div>;
 };
 
 export default PostList;
