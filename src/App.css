@@ -8,16 +8,29 @@
 
 .flex-container {
     display:direction;
+    border-radius: 20px;
     padding: 20px 400px;
-    gap: 50px
+    gap: 100
+    
 }
 
 .flex-item{
     background-color: whitesmoke ;
+    flex: 1;
     border: 10px 20px ;
     padding: 50px 50px;
 }
+flex-item1{
+      margin: left 20px; ;
+    border: 10px 20px ;
+    padding: 50px 50px;
+}
+
+
+
 .flex-item2{
-    background-color: goldenrod ;
+    background-color: whitesmoke ;
+    margin-top: 25px;
+    border:40px;
     padding: 50px 50px;
 }

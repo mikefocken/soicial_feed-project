@@ -15,7 +15,7 @@ const Post = ({ postObj }) => {
     setIsDisLike(!isDisLike);
   };
 
-  const btnLikeClass = isLike ? 'active-btn' : '';
+  const btnLikeClass = isLike ? 'active-btn1' : '';
   const btnDisLikeClass = isDisLike ? 'active-btn' : '';
 
   return (
